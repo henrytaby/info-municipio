@@ -22,10 +22,11 @@ def get_departamentos():
                 "value": value
             })
             get_provincias(value)
-
+    
     df = pd.DataFrame(total_datos)
+    df.index = df.index + 1
+    df.to_excel("municipios.xlsx")
     print(df)
-    exit()
 
 def get_provincias(depto):
     URL_PROV = "https://fichacomunidad.ine.gob.bo/c_listadof/llenar_provincias"
