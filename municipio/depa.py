@@ -1,6 +1,5 @@
-from bs4 import BeautifulSoup, NavigableString
+from bs4 import BeautifulSoup
 import requests
-import csv
 import pandas as pd
 
 total_datos = []
@@ -66,7 +65,6 @@ def get_municipios(depto,prov):
             total_datos.append(totales)
 
 def get_comunidad(depto,prov,muni):
-    #print(prov)
     URL_MUN = "https://fichacomunidad.ine.gob.bo/c_listadof/listar_comunidades"
     data = {'accion':'cargar_comunidades'
             ,'id_depto':depto
