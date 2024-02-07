@@ -1,12 +1,15 @@
-# Recuperar datos de Municipios de Bolivia
+<h1 align="center">Info Municipio - Bolivia</h1>
 
 ## Recuperar datos de Municipios
 
-Este script desarrollado en Python, permite recuperar datos de total de habitantes, habitantes mujeres y habitantes mujeres de un municipio de Bolivia, estos datos serán extraidos de la página oficial del INE y almacenados en un archivo Excel dentro la carpeta "municipio"
+El presente script, desarrollado en Python, ofrece la capacidad de recuperar información acerca del total de habitantes, desglosados por género (mujeres y hombres), de los municipios en Bolivia. Estos datos se extraen de la página oficial del Instituto Nacional de Estadística (INE) y se almacenan de manera organizada en un archivo Excel, ubicado dentro de la carpeta denominada "municipio".
 
+La fuente original de estos datos es la siguiente página:
 https://fichacomunidad.ine.gob.bo/
 
-Para instalar las dependencias
+Este proceso automatizado no solo garantiza la eficiente obtención de datos, sino también su almacenamiento estructurado para un posterior análisis y uso.
+
+Comandos para instalar las dependencias del proyecto
 ```sh
 pip2 install requests
 pip3 install bs4
@@ -14,7 +17,7 @@ pip3 install pandas
 ```
 
 
-Para iniciar la extracción de datos
+Comandos para iniciar la extracción de datos
 ```sh
 cd municipio
 python3 main.py
